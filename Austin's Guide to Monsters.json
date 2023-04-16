@@ -49,7 +49,7 @@
 			"wis": 14,
 			"cha": 8,
 			"passive": 16,
-			"cr": "7",
+			"cr": "4",
 			"shortName": "Gobbler",
 			"senses": [
 				"darkvision 60 ft."
@@ -186,7 +186,7 @@
 			"wis": 12,
 			"cha": 8,
 			"passive": 13,
-			"cr": "6",
+			"cr": "5",
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -288,7 +288,7 @@
 			"wis": 14,
 			"cha": 10,
 			"passive": 15,
-			"cr": "6",
+			"cr": "3",
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -423,7 +423,7 @@
 			"wis": 12,
 			"cha": 8,
 			"passive": 14,
-			"cr": "5",
+			"cr": "4",
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -530,7 +530,7 @@
 			"wis": 10,
 			"cha": 8,
 			"passive": 10,
-			"cr": "4",
+			"cr": "2",
 			"shortName": "Stiltwalker Chieftain",
 			"senses": [
 				"darkvision 60 ft."
@@ -641,7 +641,7 @@
 			"wis": 14,
 			"cha": 12,
 			"passive": 14,
-			"cr": "4",
+			"cr": "5",
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -939,6 +939,9 @@
 					}
 				]
 			},
+			"environment": [
+				"swamp"
+			],
 			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096925166270939196/Bog_Hound.png"
 		},
 		{
@@ -974,7 +977,7 @@
 			"wis": 14,
 			"cha": 12,
 			"passive": 14,
-			"cr": "2",
+			"cr": "1",
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -1210,7 +1213,7 @@
 			"wis": 16,
 			"cha": 8,
 			"passive": 13,
-			"cr": "0",
+			"cr": "1/2",
 			"shortName": "Stiltwalker Shaman",
 			"senses": [
 				"darkvision 60 ft."
@@ -1332,7 +1335,7 @@
 			"wis": 12,
 			"cha": 14,
 			"passive": 11,
-			"cr": "1/2",
+			"cr": "1/4",
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -1446,6 +1449,7 @@
 			"cha": 8,
 			"passive": 9,
 			"cr": "1/4",
+			"shortName": "Stiltwalker",
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -1508,7 +1512,10 @@
 						}
 					}
 				]
-			}
+			},
+			"environment": [
+				"swamp"
+			]
 		},
 		{
 			"name": "Mud Skimmer",
@@ -1613,6 +1620,9 @@
 					}
 				]
 			},
+			"environment": [
+				"swamp"
+			],
 			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096924664774799401/Mud_Skimmer.png"
 		}
 	]
