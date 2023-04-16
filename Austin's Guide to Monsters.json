@@ -1,0 +1,1619 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AustinsGuidetoMonsters",
+				"abbreviation": "AGtM",
+				"full": "Austin's Guide to Monsters",
+				"url": "",
+				"authors": [
+					"Austin McGrath"
+				],
+				"convertedBy": [
+					"Austin McGrath"
+				]
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Mud Gobbler",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 40",
+				"average": 84
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 20,
+			"int": 6,
+			"wis": 14,
+			"cha": 8,
+			"passive": 16,
+			"cr": "7",
+			"shortName": "Gobbler",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"str": "+9",
+				"con": "+9"
+			},
+			"trait": [
+				{
+					"name": "Mud Regeneration",
+					"entries": [
+						"The Mud Gobbler regains 10 hit points at the start of each of its turns if it has at least 1 hit point and is in contact with mud or water"
+					]
+				},
+				{
+					"name": "Mud Absorption",
+					"entries": [
+						"Whenever the Mud Gobbler takes acid, cold, or lightning damage, it gains temporary hit points equal to half the damage taken"
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The Mud Gobbler can breathe both air and water"
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Damage Absorption"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Mud Gobbler makes two Slam attacks and one Tongue Lash attack."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. If the target is Medium or smaller, the Mud Gobbler can also attempt to swallow it as a bonus action."
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"The Mud Gobbler makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed creature is {@condition blinded} and {@condition restrained}, and it has total cover against attacks and other effects outside the Mud Gobbler. The Mud Gobbler can have only one creature swallowed at a time. At the start of each of the Mud Gobbler's turns, the swallowed creature takes 11 ({@damage 2d10}) acid damage. If the Mud Gobbler takes 25 damage or more on a single turn from a creature inside it, the Mud Gobbler must succeed on a {@dc 15} Constitution saving throw or regurgitate the swallowed creature, which falls {@condition prone} in a space within 10 feet of the Mud Gobbler. If the Mud Gobbler dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 10 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Tongue Lash",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 30 ft., one target. {@h}7 ({@damage 1d6 + 2}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 15} Strength saving throw or be pulled up to 20 feet toward the Mud Gobbler, and the Mud Gobbler can then attempt to make a Bite attack against the pulled creature as a bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096924665022271668/Mud_Gobbler.png",
+			"fluff": {
+				"entries": [
+					"A voracious and territorial beast, the Mud Gobbler is a massive quadrupedal creature that roams the mudflats in search of prey. Its hulking body is covered in tough, mud-splattered hide that acts as natural armor. Its maw is filled with rows of sharp teeth designed for ripping apart its victims, and its long, prehensile tongue can snatch creatures from a distance."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096924689923850250/32276f47-0170-4ce9-a2f4-b6abdec76941.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"swamp"
+			]
+		},
+		{
+			"name": "Mud Crawler",
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 32",
+				"average": 120
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 12,
+			"cha": 8,
+			"passive": 13,
+			"cr": "6",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+3",
+				"stealth": "+3"
+			},
+			"trait": [
+				{
+					"name": "Swamp Movement",
+					"entries": [
+						"The Mud Crawler can move through difficult terrain created by mud or shallow water without slowing down with their webbed feet"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multi-attack",
+					"entries": [
+						"The Mud Crawler can make two attacks, either with its bite or with an acidic globule."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Acidic Globule",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}13 ({@damage 2d10 + 2}) acid damage."
+					]
+				}
+			],
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096924665458458684/Mud_Crawler.png",
+			"fluff": {
+				"entries": [
+					"A grotesque aberration that dwells in the muck of the mudflats, the Mud Crawler resembles a monstrous hybrid of a slug, a crab, and a leech. Its bloated body is covered in slimy, mud-caked carapace that camouflages it perfectly with the muddy environment. Its many legs are adapted for both swimming and crawling, allowing it to move with uncanny speed through the sludgy terrain."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096924691953893537/f779ffbf-6206-466a-8e80-db2291eb768a.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"swamp"
+			]
+		},
+		{
+			"name": "Mud Whisperer",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 24",
+				"average": 68
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": {
+				"special": "`6"
+			},
+			"int": 14,
+			"wis": 14,
+			"cha": 10,
+			"passive": 15,
+			"cr": "6",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"stealth": "+5",
+				"perception": "+5"
+			},
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"blinded"
+			],
+			"trait": [
+				{
+					"name": "Amorphous Form",
+					"entries": [
+						"The Mud Whisperer can move through a space as narrow as 1 inch without squeezing."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"he Mud Whisperer can use its action to polymorph into a medium-sized humanoid or a Large puddle of mud. Its statistics, other than its size, remain the same in each form. It can revert to its true form as a bonus action."
+					]
+				},
+				{
+					"name": "Mud Manipulation",
+					"entries": [
+						"The Mud Whisperer can control the mud within 30 feet of it as if it were a living extension of its body. It can create tendrils or pseudopods made of mud to attack, manipulate objects, or grapple creatures. The Mud Whisperer's mud tendrils have a reach of 10 feet, and the attack uses the creature's Dexterity modifier."
+					]
+				},
+				{
+					"name": "Camouflage",
+					"entries": [
+						"While in its mud form, the Mud Whisperer has advantage on Dexterity (Stealth) checks made to hide in muddy environments."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Shapechanger"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Mud Whisperer makes two mud tendril attacks."
+					]
+				},
+				{
+					"name": "Mud Tendril",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d8 + 3}) bludgeoning damage, plus 4 ({@damage 1d8}) acid damage. On a hit, the target must make a {@dc 14} Dexterity saving throw or be {@condition grappled} (escape {@dc 14}). While {@condition grappled}, the target is {@condition restrained}, and the Mud Whisperer can manipulate the mud to suffocate the target, causing the target to be unable to breathe while {@condition grappled}. The target can attempt to break free on its turn with a successful {@dc 14} Strength (Athletics) or Dexterity (Acrobatics) check as an action."
+					]
+				},
+				{
+					"name": "Mud Whisper",
+					"entries": [
+						"The Mud Whisperer can use its bonus action to unleash an eerie whisper that forces all creatures within 30 feet of it to make a {@dc 14} Wisdom saving throw or become {@condition charmed} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"charmed",
+				"grappled",
+				"restrained"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096924663931752548/Mud_Whisperer.png",
+			"environment": [
+				"swamp"
+			],
+			"fluff": {
+				"entries": [
+					"A mysterious and elusive creature, the Mud Whisperer is a shapeshifter that can seamlessly merge with the mud of the mudflats, becoming one with its surroundings. It has an amorphous, blob-like form with a mesmerizing pattern of shifting colors that blend with the mud, making it nearly impossible to detect. The Mud Whisperer can control the mud around it, shaping it into tendrils or pseudopod."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096924691706417212/3ae410cb-4323-4a4c-ab4c-dbe929d0d960.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swamp Serpent",
+			"size": [
+				"H"
+			],
+			"type": "beast",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 6,
+			"wis": 12,
+			"cha": 8,
+			"passive": 14,
+			"cr": "5",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+4",
+				"stealth": "+6"
+			},
+			"trait": [
+				{
+					"name": "Swamp Adaptation",
+					"entries": [
+						"The swamp serpent has advantage on Dexterity (Stealth) checks made in marshy or muddy terrain."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 8}) piercing damage, and the target must make a {@dc 14} Constitution saving throw or become {@condition poisoned} for 1 minute. The {@condition poisoned} target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 1d10 + 8}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 14}). Until this grapple ends, the target is {@condition restrained}, and the serpent can't constrict another target."
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"The swamp serpent makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the swamp serpent, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the serpent's turns. The swamp serpent can have only one creature swallowed at a time. If the swamp serpent dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 10 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Acid Spit (Recharge 5-6).",
+					"entries": [
+						"The swamp serpent spits acid in a 30-foot line. Each creature in that area must make a {@dc 14} Dexterity saving throw, taking 16 ({@damage 3d10}) acid damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"poisoned",
+				"restrained"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096925166543589426/token_5.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096925334605152377/8bce585a-174e-4165-8aed-eca6b9450a54.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"swamp"
+			]
+		},
+		{
+			"name": "Stiltwalker Goblin, Chieftain",
+			"size": [
+				"S"
+			],
+			"type": "humanoid",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "10d6 + 30",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 10,
+			"cha": 8,
+			"passive": 10,
+			"cr": "4",
+			"shortName": "Stiltwalker Chieftain",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"skill": {
+				"stealth": "+6",
+				"intimidation": "+2"
+			},
+			"trait": [
+				{
+					"name": "Stilt Walker",
+					"entries": [
+						"When the goblin is on its stilts, it can move through difficult terrain as if it wasn't difficult, as well as extend its attack reach to 10ft."
+					]
+				},
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the chieftain can move up to its speed toward a hostile creature that it can see."
+					]
+				}
+			],
+			"traitTags": [
+				"Aggressive"
+			],
+			"action": [
+				{
+					"name": "Stilt Spear",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Chieftain's Roar",
+					"entries": [
+						"The chieftain lets out a mighty roar, forcing each creature within 30 feet of it to make a {@dc 13} Wisdom saving throw or become {@condition frightened} until the end of the chieftain's next turn."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"environment": [
+				"swamp"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096925165583093801/Stiltwalker_Goblin_Chieftain.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096925333992779777/2fe3fd51-360b-454d-8cdd-068e22d2be60.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Quicksand Serpent",
+			"size": [
+				"H"
+			],
+			"type": "elemental",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d12 + 24",
+				"average": 128
+			},
+			"speed": {
+				"walk": 60,
+				"burrow": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 12,
+			"passive": 14,
+			"cr": "4",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"dex": "+5",
+				"con": "+6"
+			},
+			"trait": [
+				{
+					"name": "Sand Glide",
+					"entries": [
+						"The Quicksand Serpent can move through sand and dust without disturbing it, leaving no trace of its passage. It can also move through solid objects made of sand or dust, such as sandstone or piles of loose sand, as if they were difficult terrain."
+					]
+				},
+				{
+					"name": "Sand Shapechanger",
+					"entries": [
+						"As an action, the Quicksand Serpent can reshape its body into different forms. It can transform into a long whip-like form, gaining a reach of 20 feet and dealing {@damage 2d8 + 4} slashing damage on a hit, or into a protective shield-like form, gaining a +2 bonus to its AC and resistance to bludgeoning, piercing, and slashing damage until the start of its next turn."
+					]
+				},
+				{
+					"name": "Sand Manipulation",
+					"entries": [
+						"The Quicksand Serpent can use its action to manipulate sand and dust within 60 feet of itself. It can create difficult terrain, such as quicksand or sand dunes, or create a blinding sandstorm in a 20-foot radius around itself, causing all creatures in the area to make a {@dc 14} Constitution saving throw or become {@condition blinded} until the end of their next turn. The Quicksand Serpent is immune to the effects of its own sandstorm."
+					]
+				}
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Quicksand Serpent makes two attacks: one with its Bite and one with its Whip or Shield."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Whip",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 20 ft., one target. {@h}13 ({@damage 2d4 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Sheild",
+					"entries": [
+						"The Quicksand Serpent gains a +2 bonus to its AC until the start of its next turn."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096924691056312480/390c6ef3-0048-47a2-a61e-ebd8a6595906.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096924663650726009/Quick_Sand_Serpent.png",
+			"environment": [
+				"coastal",
+				"desert"
+			]
+		},
+		{
+			"name": "Mud Slinger",
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 24",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 10,
+				"swim": 20
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 14,
+			"int": 8,
+			"wis": 14,
+			"cha": 8,
+			"passive": 14,
+			"cr": "4",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+5"
+			},
+			"skill": {
+				"perception": "+4"
+			},
+			"trait": [
+				{
+					"name": "Mud Shapechanger",
+					"entries": [
+						"The Mud Slinger can use its action to create or shape mud within 60 feet of itself, as per the Mold Earth cantrip. It can create simple shapes, such as walls or barriers, or manipulate existing mud terrain to create difficult terrain or provide cover."
+					]
+				},
+				{
+					"name": "Mud Absorption",
+					"entries": [
+						"When the Mud Slinger hits a creature with a melee attack, it can use its reaction to attempt to absorb the target into its form. The target must succeed on a {@dc 14} Strength saving throw or be absorbed. An absorbed creature is considered {@condition grappled}, and takes 14 ({@damage 4d6}) bludgeoning damage at the start of each of the Mud Slinger's turns. The Mud Slinger gains the abilities and characteristics of the absorbed creature, including its attacks, special abilities, and resistances/immunities. The absorbed creature can attempt to escape the grapple as an action, using the same {@dc 14} Strength saving throw."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The Mud Slinger can breathe both air and water."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"traitTags": [
+				"Amphibious",
+				"Damage Absorption"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Mud Slinger makes two Mud Throw attacks."
+					]
+				},
+				{
+					"name": "Mud Throw",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 30/60 ft., one target. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"RCH"
+			],
+			"environment": [
+				"swamp"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096924664456040538/Mud_Slinger.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096924691375083560/6d91a7bb-6589-4ab7-8dea-554560e9baa8.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Boghound",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 16",
+				"average": 60
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 12,
+			"cha": 8,
+			"passive": 13,
+			"cr": "3",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"stealth": "+4",
+				"perception": "+3"
+			},
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The Boghound has advantage on Wisdom (Perception) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Swamp Movement",
+					"entries": [
+						"The Boghound can move through difficult terrain created by mud or shallow water without slowing down with their webbed feet."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096925334286377001/2ab6dacb-e426-4a54-80f8-40292c3d9fe5.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096925166270939196/Bog_Hound.png"
+		},
+		{
+			"name": "Mud Whisp",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 12",
+				"average": 30
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 12,
+			"passive": 14,
+			"cr": "2",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"dex": "+4",
+				"con": "+5"
+			},
+			"skill": {
+				"perception": "+4"
+			},
+			"trait": [
+				{
+					"name": "Mud Camouflage",
+					"entries": [
+						"The Mud Whisperer has advantage on Dexterity (Stealth) checks made to hide in muddy terrain."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The Mud Whisperer can breathe both air and water."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Mud Whisperer makes two Claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Mud Mimicry",
+					"entries": [
+						"When the Mud Whisperer takes damage from a melee attack, it can use its reaction to briefly transform into a pool of mud. The attack has disadvantage on the attack roll, and if it hits, the Mud Whisperer takes half damage. On its next turn, the Mud Whisperer reforms and can take its normal actions."
+					]
+				}
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096924664233721937/Mud_Whisp.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096924692234915953/d49d9812-af34-415f-b967-62cb73cf97d1.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"swamp"
+			]
+		},
+		{
+			"name": "Bog Creeper",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 20
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 10,
+			"passive": 14,
+			"cr": "1",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"athletics": "+5",
+				"stealth": "+3",
+				"perception": "+4"
+			},
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The bog creeper can breathe both air and water."
+					]
+				},
+				{
+					"name": "Creeping Advance",
+					"entries": [
+						"The bog creeper has advantage on Dexterity (Stealth) checks made to hide in marshy or boggy terrain."
+					]
+				},
+				{
+					"name": "Malevolent Presence",
+					"entries": [
+						"The bog creeper exudes an aura of malevolence that unnerves those around it. Any creature that starts its turn within 10 feet of the bog creeper must make a {@dc 12} Wisdom saving throw or become {@condition frightened} until the start of its next turn."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone",
+				"restrained"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bog creeper makes two attacks: one with its bite and one with its claw."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Swamp Slam {@recharge 5}",
+					"entries": [
+						"The bog creeper slams the ground, causing a wave of mud and muck to erupt in a 10-foot radius around it. Each creature in that area must make a {@dc 12} Dexterity saving throw or be knocked {@condition prone} and {@condition restrained} by the boggy muck. A creature can use its action to make a {@dc 12} Strength check to break free of the mud and end the {@condition restrained} condition."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096924663411638332/Bog_Creeper.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096924690649452544/447ce194-fd0e-44ba-ae93-296a27435e8f.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"swamp"
+			]
+		},
+		{
+			"name": "Stiltwalker Goblin, Shaman",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(Goblinoid)"
+			},
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "6d6 + 6",
+				"average": 27
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 16,
+			"cha": 8,
+			"passive": 13,
+			"cr": "0",
+			"shortName": "Stiltwalker Shaman",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Goblin",
+				"Druidic"
+			],
+			"languageTags": [
+				"C",
+				"GO",
+				"DU"
+			],
+			"skill": {
+				"stealth": "+4",
+				"medicine": "+5",
+				"religion": "+2"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shaman is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, +5 to hit with spell attacks). The shaman has the following druid spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mold earth|XGE}",
+								"{@spell thorn whip}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell entangle}",
+								"{@spell speak with animals}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell barkskin}",
+								"{@spell gust of wind}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"damageTagsSpell": [
+				"P"
+			],
+			"action": [
+				{
+					"name": "Stilt Spear",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096925165369163828/Stiltwalker_Goblin_Shaman.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096925333598511154/87fcefdc-8404-4177-be32-cc233e526b6d.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"swamp"
+			]
+		},
+		{
+			"name": "Bogling",
+			"size": [
+				"T"
+			],
+			"type": "fey",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "5d4 + 5",
+				"average": 17
+			},
+			"speed": {
+				"walk": 15,
+				"climb": 15
+			},
+			"str": 6,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"passive": 11,
+			"cr": "1/2",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Sylvan"
+			],
+			"languageTags": [
+				"S"
+			],
+			"skill": {
+				"stealth": "+5",
+				"sleight of hand": "+5"
+			},
+			"trait": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The bogling can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The bogling can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Bogling's Boon (Prank)",
+					"entries": [
+						"The bogling offers a small gift or token of friendship to a creature it encounters, such as a beautifully crafted trinket or a delicious-looking treat. If the creature accepts the gift, it becomes {@condition charmed} by the bogling for 1 hour or until the bogling harms the creature or its allies."
+					]
+				},
+				{
+					"name": "Distracting Illusion (Prank)",
+					"entries": [
+						"The bogling uses its innate fey magic to create an illusion of a tempting treasure or an alluring distraction. The creature within 30 feet of the bogling must succeed on a {@dc 13} Intelligence (Investigation) check to see through the illusion or be lured away, leaving their current position vulnerable."
+					]
+				},
+				{
+					"name": "Prankster's Gambit (Prank)",
+					"entries": [
+						"The bogling sets up an elaborate prank, such as rigging a trapdoor, casting an illusion to create a false appearance, or tampering with an object to cause a humorous or surprising effect. The prank has a {@dc 13} Dexterity saving throw to avoid, and on a failed save, the creature falls victim to the prank and suffers a harmless but embarrassing or amusing consequence."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb"
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096924665714323567/Bogling.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096924690246815744/4314d972-3e2a-4abf-bb71-64055045f234.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"swamp"
+			]
+		},
+		{
+			"name": "Stiltwalker Goblin",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(Goblinoid)"
+			},
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "2d6",
+				"average": 7
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 10,
+			"int": 10,
+			"wis": 8,
+			"cha": 8,
+			"passive": 9,
+			"cr": "1/4",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"skill": {
+				"stealth": "+6"
+			},
+			"trait": [
+				{
+					"name": "Stilt Walker",
+					"entries": [
+						"When the goblin is on their stilts, they can move through difficult terrain as if it wasn't difficult, as well as extend their attack reach to 10ft."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Stilt Spear",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Stilt Spear",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage and the target must make a {@dc 13} Constitution saving throw or be {@condition blinded} until the end of their next turn."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096925166015090708/Stiltwalker_Goblin.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096925335003607110/fed9d621-2d25-4e55-bd9e-50a5b9bc8724.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Mud Skimmer",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "3d4 + 3",
+				"average": 10
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 20
+			},
+			"str": 4,
+			"dex": 18,
+			"con": 12,
+			"int": 6,
+			"wis": 14,
+			"cha": 10,
+			"passive": 14,
+			"cr": "1/8",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"athletics": "+2",
+				"perception": "+4"
+			},
+			"trait": [
+				{
+					"name": "Aquatic Camouflage",
+					"entries": [
+						"The mudskimmer can blend seamlessly with its surroundings, using its natural mud-like coloration and patterns to hide in mud or murky water. It has advantage on Dexterity (Stealth) checks made to hide in aquatic environments."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The mudskimmer can breathe both air and water."
+					]
+				},
+				{
+					"name": "Eager Swimmer",
+					"entries": [
+						"The mudskimmer can move through difficult terrain in water without penalty and can swim up to its full speed without making an ability check."
+					]
+				},
+				{
+					"name": "Playful Nature",
+					"entries": [
+						"The mudskimmer has a playful and curious demeanour, often engaging in playful antics and interactions with other creatures. It has a knack for finding joy and fun in even the simplest things."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit +6} to hit, reach 5 ft., one target. {@h}1 ({@damage 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Mud Spray",
+					"entries": [
+						"The mudskimmer can spray a jet of mud in a 10-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw or be {@condition blinded} by the mud until the end of their next turn. A creature that succeeds on the saving throw is partially {@condition blinded} and has disadvantage on its next attack roll or ability check that relies on sight."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1096924692482363533/a1518b0b-f297-4bf3-a2c8-f5cc4c5f264f.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096924664774799401/Mud_Skimmer.png"
+		}
+	]
+}
