@@ -1624,6 +1624,238 @@
 				"swamp"
 			],
 			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1096924664774799401/Mud_Skimmer.png"
+		},
+		{
+			"name": "Bloodroot Beetle",
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8",
+				"average": 9
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 10,
+			"int": 2,
+			"wis": 12,
+			"cha": 6,
+			"passive": 13,
+			"cr": "1/4",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"stealth": "+4",
+				"perception": "+3"
+			},
+			"immune": [
+				"acid"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Venom Spray {@recharge 5}",
+					"entries": [
+						"The Bloodroot Beetle can spray a venomous liquid in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 3 ({@damage 1d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"bonus": [
+				{
+					"name": "Scurry",
+					"entries": [
+						"The Bloodroot Beetle can use its bonus action to move up to half its speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Aerial Lunge",
+					"entries": [
+						"When the Bloodroot Beetle is targeted by a melee attack that misses, it can use its reaction to disengage from the attacker. It then moves up to its speed without provoking opportunity attacks, evading the attacker's strike and avoiding damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Oculith",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"source": "AustinsGuidetoMonsters",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d10 + 39",
+				"average": 110
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 14,
+			"wis": 12,
+			"cha": 10,
+			"passive": 14,
+			"cr": "5",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Abyssal"
+			],
+			"languageTags": [
+				"C",
+				"AB"
+			],
+			"save": {
+				"str": "+7",
+				"dex": "+4",
+				"con": "+6"
+			},
+			"skill": {
+				"perception": "+4"
+			},
+			"resist": [
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Multi-Eyed",
+					"entries": [
+						"The Oculith has 10 eyes, each granting it a unique ability. The Oculith can use up to 5 different eye abilities on its turn. Each time it uses an eye ability, the corresponding eye loses its power and becomes dim, rendering that ability unusable until the Oculith completes a short or long rest."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Paralyzing Gaze",
+					"entries": [
+						"The Oculith targets one creature within 30 feet that it can see. The target must make a {@dc 14} Wisdom saving throw or be {@condition paralyzed} for 1 minute."
+					]
+				},
+				{
+					"name": "Blinding Ray",
+					"entries": [
+						"The Oculith targets one creature within 60 feet that it can see. The target must make a {@dc 14} Dexterity saving throw or be {@condition blinded} for 1 minute."
+					]
+				},
+				{
+					"name": "Mind Blast",
+					"entries": [
+						"The Oculith unleashes a wave of psychic energy in a 20-foot cone. Each creature in that area must make a {@dc 14} Intelligence saving throw or take 22 ({@damage 4d10}) psychic damage."
+					]
+				},
+				{
+					"name": "Fearsome Roar",
+					"entries": [
+						"The Oculith lets out a terrifying roar. Each creature within 30 feet that can hear it must make a {@dc 14} Charisma saving throw or become {@condition frightened} for 1 minute."
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"The Oculith targets one creature within 30 feet that it can see. The target must make a {@dc 14} Constitution saving throw or take 11 ({@damage 2d10}) necrotic damage, and the Oculith regains hit points equal to the damage dealt."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"he Oculith makes two Slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"paralyzed"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/1096924478312828980/1097272940564844576/token_1.png",
+			"fluff": {
+				"entries": [
+					"The Oculith appears as a large, humanoid creature with a hulking form covered in tattered robes. Its most striking feature is its head, which is adorned with dozens of eyes of various shapes and colors, each one flickering with a malevolent intelligence. As the Oculith uses its abilities, some of the eyes dim and fade, leaving empty sockets that reveal the creature's true power."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/1096924606490747020/1097272919895314452/3972bf4c-4d00-49ed-8662-6017e82c08ed.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"underdark"
+			]
 		}
 	]
 }
